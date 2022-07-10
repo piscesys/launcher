@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2021 CutefishOS.
+ * Copyright (C) 2021 Piscesys.
  *
- * Author:     Reoin Wong <reion@cutefishos.com>
+ * Author:     Reoin Wong <reion@piscesys.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ import QtGraphicalEffects 1.0
 import QtQuick.Window 2.12
 import QtQuick.Layouts 1.12
 import FishUI 1.0 as FishUI
-import Cutefish.Launcher 1.0
+import Pisces.Launcher 1.0
 
 Item {
     id: control
@@ -38,7 +38,7 @@ Item {
 
     Drag.active: iconMouseArea.drag.active
     Drag.mimeData: [model.appId]
-    Drag.keys: ["cutefish-launcher"]
+    Drag.keys: ["pisces-launcher"]
     Drag.dragType: Drag.Automatic
     Drag.supportedActions: Qt.MoveAction
     Drag.hotSpot.x: icon.width / 2
@@ -166,7 +166,7 @@ Item {
             if (mouse.button == Qt.LeftButton)
                 launcherModel.launch(model.appId)
             else if (mouse.button == Qt.RightButton) {
-                uninstallItem.visible = appManager.isCutefishOS()
+                uninstallItem.visible = appManager.isPiscesys()
                 _itemMenu.updateActions()
                 _itemMenu.popup()
             }

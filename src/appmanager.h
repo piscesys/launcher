@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2021 CutefishOS.
+ * Copyright (C) 2021 Piscesys.
  *
- * Author:     Kate Leet <kate@cutefishos.com>
+ * Author:     Kate Leet <kate@piscesys.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ public:
 
     Q_INVOKABLE void uninstall(const QString &desktopFile);
 
-    Q_INVOKABLE bool isCutefishOS();
+    Q_INVOKABLE bool isPiscesys();
 
 private:
     QDBusInterface m_iface;

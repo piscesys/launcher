@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-set(PROJECT_NAME cutefish-launcher)
+set(PROJECT_NAME pisces-launcher)
 project(${PROJECT_NAME})
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -34,7 +34,7 @@ set(RESOURCES
 )
 
 qt5_add_dbus_adaptor(DBUS_SRCS
-    src/com.cutefish.Launcher.xml
+    src/com.pisces.Launcher.xml
     src/launcher.h
     Launcher
     launcheradaptor

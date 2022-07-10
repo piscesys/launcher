@@ -1,6 +1,6 @@
 # Launcher
 
-CutefishOS's full-screen application launcher.
+Piscesys's full-screen application launcher.
 
 ## Dependencies
 Arch Linux/Manjaro Dependencies
